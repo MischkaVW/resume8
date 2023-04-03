@@ -17,7 +17,7 @@ body, html {
   position: relative;
 }
 
-.bannermain {}
+
 .bannerlongs {width: auto;}
 .bannersquare {width: auto;}
 
@@ -48,7 +48,14 @@ body, html {
 #header {
     position: relative;
     background-color: rgba(240, 248, 255, 0);
+
 }
+#header-content {
+  margin-top: 10px;
+  padding-top: 0%;
+  background-color: rgba(240, 248, 255, 0);
+}
+
 
 /* relatively position header image inside header element using CSS here */
 #header-image {
@@ -61,7 +68,7 @@ body, html {
 }
   
 /*change form sumition text under contact us heading*/
-form {color:#000}
+form {color:#ffffff}
 
 
 @media only screen and (max-width: 900px)
@@ -78,50 +85,25 @@ form {color:#000}
 
     }
 
-@media only screen and (max-width: 480x)
-{
-     
-    .hero-image {background-size: contain;}
+/*code for mobile devices smaller than 600px*/
+body { background-color: rgb(185, 185, 240); }
 
-    .hero-text {
-        text-align: center;
-        position: absolute;
-        top: 20% important; 
-        left: 24% important;
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   body { background-color: rgb(238, 211, 211); }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   body { background-color: rgb(118, 133, 118); }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   body { background-color: rgb(197, 197, 169); }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   body { background-color: rgb(196, 186, 167); }
 }
-
-/*
-@media only screen and (min-width: 1240px) and (max-width: 1489px)
-{	
-		
-}
-
-
-@media only screen and (min-width: 960px) and (max-width: 1239px)
-{
-	#header-image {width: 250px; }
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 959px)
-{	
-	
-}
-
-@media only screen and (max-width: 768px)
-{
-
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px)
-{
-		
-	
-}
-
-@media only screen and (max-width: 479px)
-{
-	#header-image {width: 100%; text-align: center;}
-	
-}*/
